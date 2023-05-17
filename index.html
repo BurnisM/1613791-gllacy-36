@@ -1,142 +1,142 @@
 <!DOCTYPE html>
 <html lang="ru">
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="купить мороженое магазин мороженого">
-  <meta name="keywords" content="купить мороженое в Санкт-Петербурге, купить мороженое онлайн">
-  <link rel="stylesheet" href="./styles/styles.css">
-  <link rel="icon" href="favicon.ico">
-  <title>Gllacy Shop</title>
-</head>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="купить мороженое магазин мороженого">
+    <meta name="keywords" content="купить мороженое в Санкт-Петербурге, купить мороженое онлайн">
+    <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="icon" href="favicon.ico">
+    <title>Gllacy Shop</title>
+  </head>
 
-<body>
-  <div class="page-container">
-    <header class="page-header">
-      <nav class="navigation">
-        <a class="navigation-logo" href="#" aria-label="переход на главную страницу">
-          <img class="logo-logo-image" src="./images/svg/logo.png" width="359" height="146"
-            alt="магазин мороженного Глейси.">
-        </a>
-        <ul class="navigation-list">
-          <li class="navigation-item">
-            <div class="submenu">
-              <button class="submenu-button" type="button">
-                <span class="button-text">Каталог</span>
-                <svg class="button-icon"></svg>
-              </button>
-              <ul class="submenu-list">
-                <li class="submenu-item">
-                  <a class="submenu-link submenu-link-current">Новинки</a>
-                </li>
-                <li class="submenu-item">
-                  <a class="submenu-link">Сливочное</a>
-                </li>
-                <li class="submenu-item">
-                  <a class="submenu-link">Щербеты</a>
-                </li>
-                <li class="submenu-item">
-                  <a class="submenu-link">Фруктовый лед</a>
-                </li>
-                <li class="submenu-item">
-                  <a class="submenu-link">Мелорин</a>
-                </li>
-              </ul>
+  <body>
+    <div class="main-container">
+      <header class="page-header">
+        <nav class="navigation">
+          <a class="navigation-logo" href="#" aria-label="переход на главную страницу">
+            <img class="logo-logo-image" src="./images/svg/logo.png" width="359" height="146"
+              alt="магазин мороженного Глейси.">
+          </a>
+          <ul class="navigation-list">
+            <li class="navigation-item">
+              <div class="submenu">
+                <button class="submenu-button" type="button">
+                  <span class="button-text">Каталог</span>
+                  <svg class="button-icon"></svg>
+                </button>
+                <ul class="submenu-list">
+                  <li class="submenu-item">
+                    <a class="submenu-link submenu-link-current">Новинки</a>
+                  </li>
+                  <li class="submenu-item">
+                    <a class="submenu-link">Сливочное</a>
+                  </li>
+                  <li class="submenu-item">
+                    <a class="submenu-link">Щербеты</a>
+                  </li>
+                  <li class="submenu-item">
+                    <a class="submenu-link">Фруктовый лед</a>
+                  </li>
+                  <li class="submenu-item">
+                    <a class="submenu-link">Мелорин</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="navigation-item">
+              <a class="navigation-link" href="#">Доставка и оплата</a>
+            </li>
+            <li class="navigation-item">
+              <a class="navigation-link" href="#">О компании</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="user-menu">
+          <a class="user-phone-link" href="tel:+7 800 555-86-28">+7 800 555-86-28</a>
+          <div class="user-item">
+            <button class="user-button search" type="button" aria-lebel="Поиск">
+              <svg class="search-icon"></svg>
+            </button>
+            <div class="popover-container search-container">
+              <form class="search-form" action="https://echo.htmlacademy.ru/" method="get">
+                <input class="search-input" type="search" name="search" placeholder="Поиск по сайту"
+                  aria-label="Поиск по сайту" required>
+              </form>
             </div>
-          </li>
-          <li class="navigation-item">
-            <a class="navigation-link" href="#">Доставка и оплата</a>
-          </li>
-          <li class="navigation-item">
-            <a class="navigation-link" href="#">О компании</a>
-          </li>
-        </ul>
-      </nav>
-      <div class="user-menu">
-        <a class="user-phone-link" href="tel:+7 800 555-86-28">+7 800 555-86-28</a>
-        <div class="user-item">
-          <button class="user-button search" type="button" aria-lebel="Поиск">
-            <svg class="search-icon"></svg>
-          </button>
-          <div class="popover-container search-container">
-            <form class="search-form" action="https://echo.htmlacademy.ru/" method="get">
-              <input class="search-input" type="search" name="search" placeholder="Поиск по сайту"
-                aria-label="Поиск по сайту" required>
-            </form>
-          </div>
-        </div>
-        <div class="user-item">
-          <button class="user-button entrance" type="button" aria-label="Вход в личный кабинет">
-            <svg class="entrance-icon"></svg>
-            <span class="button-text">Вход</span>
-          </button>
-          <div class="popover-container entrance-container">
-            <h2 class="popover-title">Личный кабинет</h2>
-            <form class="entrance-form" action="https://echo.htmlacademy.ru/" method="get">
-              <input class="entrance-input" type="email" name="e-mail" placeholder="email@example.com"
-                aria-label="Адрес электронной почты" required>
-              <input class="entrance-input" type="password" name="password" aria-label="Введите пароль" required>
-              <button class="button-form" type="submit">Войти</button>
-            </form>
-            <a class="entrance-link" href="#">Забыли пароль?</a>
-            <a class="entrance-link" href="#">Регистрация</a>
           </div>
           <div class="user-item">
-            <button class="user-button cart" type="button">
-              <svg class="cart-icon"></svg>
-              <span class="button-text">2 товара</span>
+            <button class="user-button entrance" type="button" aria-label="Вход в личный кабинет">
+              <svg class="entrance-icon"></svg>
+              <span class="button-text">Вход</span>
             </button>
-            <div class="popover-container cart-container">
-              <h2 class="popover-title">Корзина</h2>
-              <ul class="cart-list">
-                <li class="cart-item">
-                  <a class="cart-link" href="#">
-                    <img class="cart-image" src="./images/content/cart-malinka.pdf" width="46" height="46"
-                      alt="мороженое Малинка.">
-                  </a>
-                  <a class="cart-link" href="#">
-                    <h3 class="popover-title">Малинка</h3>
-                  </a>
-                  <span class="cart-property">1 кг х 310 ₽</span>
-                  <span class="cart-price">310 ₽</span>
-                  <button class="cart-button" type="button" aria-label="Удалить товар из корзины">
-                    <svg class=cart-icon></svg>
-                  </button>
-                </li>
-                <li class="cart-item">
-                  <a class="cart-link" href="#">
-                    <img class="cart-image" src="./images/content/cart-babl.pdf" width="46" height="46"
-                      alt="мороженое Бабл-гам.">
-                  </a>
-                  <a class="cart-link" href="#">
-                    <h3 class="popover-title">Бабл-гам</h3>
-                  </a>
-                  <span class="cart-property">1,5 кг х 320 ₽</span>
-                  <span class="cart-price">480 ₽</span>
-                  <button class="cart-button" type="button" aria-label="Удалить товар из корзины">
-                    <svg class=cart-icon></svg>
-                  </button>
-                </li>
-              </ul>
-              <button class="button-form" type="submit">Оформить заказ</button>
-              <span class="cart-price">Итого: 790 ₽</span>
+            <div class="popover-container entrance-container">
+              <h2 class="popover-title">Личный кабинет</h2>
+              <form class="entrance-form" action="https://echo.htmlacademy.ru/" method="get">
+                <input class="entrance-input" type="email" name="e-mail" placeholder="email@example.com"
+                  aria-label="Адрес электронной почты" required>
+                <input class="entrance-input" type="password" name="password" aria-label="Введите пароль" required>
+                <button class="button-form" type="submit">Войти</button>
+              </form>
+              <a class="entrance-link" href="#">Забыли пароль?</a>
+              <a class="entrance-link" href="#">Регистрация</a>
             </div>
-            <div class="popover-container cart-container-none">
-              <h3 class="popover-title">Ваша корзина пока пуста</h3>
+            <div class="user-item">
+              <button class="user-button cart" type="button">
+                <svg class="cart-icon"></svg>
+                <span class="button-text">2 товара</span>
+              </button>
+              <div class="popover-container cart-container">
+                <h2 class="popover-title">Корзина</h2>
+                <ul class="cart-list">
+                  <li class="cart-item">
+                    <a class="cart-link" href="#">
+                      <img class="cart-image" src="./images/content/cart-malinka.pdf" width="46" height="46"
+                        alt="мороженое Малинка.">
+                    </a>
+                    <a class="cart-link" href="#">
+                      <h3 class="popover-title">Малинка</h3>
+                    </a>
+                    <span class="cart-property">1 кг х 310 ₽</span>
+                    <span class="cart-price">310 ₽</span>
+                    <button class="cart-button" type="button" aria-label="Удалить товар из корзины">
+                      <svg class=cart-icon></svg>
+                    </button>
+                  </li>
+                  <li class="cart-item">
+                    <a class="cart-link" href="#">
+                      <img class="cart-image" src="./images/content/cart-babl.pdf" width="46" height="46"
+                        alt="мороженое Бабл-гам.">
+                    </a>
+                    <a class="cart-link" href="#">
+                      <h3 class="popover-title">Бабл-гам</h3>
+                    </a>
+                    <span class="cart-property">1,5 кг х 320 ₽</span>
+                    <span class="cart-price">480 ₽</span>
+                    <button class="cart-button" type="button" aria-label="Удалить товар из корзины">
+                      <svg class=cart-icon></svg>
+                    </button>
+                  </li>
+                </ul>
+                <button class="button-form" type="submit">Оформить заказ</button>
+                <span class="cart-price">Итого: 790 ₽</span>
+              </div>
+              <div class="popover-container cart-container-none">
+                <h3 class="popover-title">Ваша корзина пока пуста</h3>
+              </div>
             </div>
           </div>
+
         </div>
+    </div>
+    </header>
+    <main class="index-main"></main>
+    <footer class="page-footer"></footer>
 
-      </div>
-  </div>
-  </header>
-  <main class="index-main"></main>
-  <footer class="page-footer"></footer>
-
-  </div>
+    </div>
 
 
-</body>
+  </body>
 
 </html>
