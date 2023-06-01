@@ -16,7 +16,7 @@
       <header class="page-header">
         <nav class="navigation">
           <a class="navigation-logo" href="#" aria-label="переход на главную страницу">
-            <img class="logo-logo-image" src="./images/svg/logo.png" width="359" height="146"
+            <img class="logo-logo-image" src="./images/svg/logo.svg" width="137" height="56"
               alt="магазин мороженного Глейси.">
           </a>
           <ul class="navigation-list">
@@ -26,7 +26,7 @@
                   <span class="button-text">Каталог</span>
                   <svg class="button-icon"></svg>
                 </button>
-                <ul class="submenu-list">
+                <ul class="popover-container submenu-list">
                   <li class="submenu-item">
                     <a class="submenu-link submenu-link-current">Новинки</a>
                   </li>
@@ -82,53 +82,54 @@
               <a class="entrance-link" href="#">Забыли пароль?</a>
               <a class="entrance-link" href="#">Регистрация</a>
             </div>
-            <div class="user-item">
-              <button class="user-button cart" type="button">
-                <svg class="cart-icon"></svg>
-                <span class="button-text">2 товара</span>
-              </button>
-              <div class="popover-container cart-container">
-                <h2 class="popover-title">Корзина</h2>
-                <ul class="cart-list">
-                  <li class="cart-item">
-                    <a class="cart-link" href="#">
-                      <img class="cart-image" src="./images/content/cart-malinka.pdf" width="46" height="46"
-                        alt="мороженое Малинка.">
-                    </a>
-                    <a class="cart-link" href="#">
-                      <h3 class="popover-title">Малинка</h3>
-                    </a>
-                    <span class="cart-property">1 кг х 310 ₽</span>
-                    <span class="cart-price">310 ₽</span>
-                    <button class="cart-button" type="button" aria-label="Удалить товар из корзины">
-                      <svg class=cart-icon></svg>
-                    </button>
-                  </li>
-                  <li class="cart-item">
-                    <a class="cart-link" href="#">
-                      <img class="cart-image" src="./images/content/cart-babl.pdf" width="46" height="46"
-                        alt="мороженое Бабл-гам.">
-                    </a>
-                    <a class="cart-link" href="#">
-                      <h3 class="popover-title">Бабл-гам</h3>
-                    </a>
-                    <span class="cart-property">1,5 кг х 320 ₽</span>
-                    <span class="cart-price">480 ₽</span>
-                    <button class="cart-button" type="button" aria-label="Удалить товар из корзины">
-                      <svg class=cart-icon></svg>
-                    </button>
-                  </li>
-                </ul>
-                <button class="button-form" type="submit">Оформить заказ</button>
-                <span class="cart-price">Итого: 790 ₽</span>
-              </div>
-              <div class="popover-container cart-container-none">
-                <h3 class="popover-title">Ваша корзина пока пуста</h3>
-              </div>
+          </div>
+          <div class="user-item">
+            <button class="user-button cart" type="button">
+              <svg class="cart-icon"></svg>
+              <span class="button-text">2 товара</span>
+            </button>
+            <div class="popover-container cart-container">
+              <h2 class="popover-title">Корзина</h2>
+              <ul class="cart-list">
+                <li class="cart-item">
+                  <a class="cart-link" href="#">
+                    <img class="cart-image" src="./images/content/cart-malink.png" width="46" height="46"
+                      alt="мороженое Малинка.">
+                  </a>
+                  <a class="cart-link" href="#">
+                    <h3 class="popover-title">Малинка</h3>
+                  </a>
+                  <span class="cart-property">1 кг х 310 ₽</span>
+                  <span class="cart-price">310 ₽</span>
+                  <button class="cart-button" type="button" aria-label="Удалить товар из корзины">
+                    <svg class=cart-icon></svg>
+                  </button>
+                </li>
+                <li class="cart-item">
+                  <a class="cart-link" href="#">
+                    <img class="cart-image" src="./images/content/cart-babl-gam.png" width="46" height="46"
+                      alt="мороженое Бабл-гам.">
+                  </a>
+                  <a class="cart-link" href="#">
+                    <h3 class="popover-title">Бабл-гам</h3>
+                  </a>
+                  <span class="cart-property">1,5 кг х 320 ₽</span>
+                  <span class="cart-price">480 ₽</span>
+                  <button class="cart-button" type="button" aria-label="Удалить товар из корзины">
+                    <svg class=cart-icon></svg>
+                  </button>
+                </li>
+              </ul>
+              <button class="button-form" type="submit">Оформить заказ</button>
+              <span class="cart-price">Итого: 790 ₽</span>
+            </div>
+            <div class="popover-container cart-container-none">
+              <h3 class="popover-title">Ваша корзина пока пуста</h3>
             </div>
           </div>
-
         </div>
+
+    </div>
     </div>
     </header>
     <main class="index-main"></main>

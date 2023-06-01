@@ -63,12 +63,114 @@ body {
  margin: 0 auto;
 }
 
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+/*навигация*/
+
+.navigation {
+  display: flex;
+  margin: auto 0;
+
+}
+
+.navigation-logo {
+  position: absolute;
+}
+
+.navigation-list {
+ margin: 0;
+ list-style-type: none;
+ display: flex;
+
+}
+
+.navigation-item {
+
+}
+
+.navigation-link {
+ font-family: 'Inter';
+ font-style: normal;
+ font-weight: 400;
+ font-size: 16px;
+ line-height: 20px;
+ text-decoration: none;
+ color: #2d3440;
+ padding: 8px 16px;
+}
+
+.user-menu {
+  display: flex;
+  gap: 16px;
+  margin: auto 0;
+}
+
+.user-phone-link {
+ font-family: 'Inter';
+ font-style: normal;
+ font-weight: 700;
+ font-size: 16px;
+ line-height: 20px;
+ color: #2d3440;
+ text-decoration: none;
+}
+
 /*субкаталог*/
 
 .submenu {
-  display: none;
+  display: block;
 }
 
-navigation-item:focus-within .submenu {
-  display: block;
+.button-text {
+ font-family: 'Inter';
+ font-style: normal;
+ font-weight: 400;
+ font-size: 16px;
+ line-height: 20px;
+}
+
+.submenu-list {
+  margin: 0;
+  list-style-type: none;
+}
+
+.submenu-link {
+ font-family: 'Inter';
+ font-style: normal;
+ font-weight: 400;
+ font-size: 14px;
+ line-height: 20px;
+ color: #2d3440;
+}
+
+/*поповер*/
+
+.popover-container {
+  background-color: #fcfcfc;
+  border-radius: 4px;
+  box-shadow: 0px 8px 16px rgba (45, 52, 64, 0.12);
+}
+
+.popover-title {
+ font-family: 'Inter';
+ font-style: normal;
+ font-weight: 700;
+ font-size: 24px;
+ line-height: 30px;
+}
+
+/*личный кабинет*/
+
+.entrance-link {
+ font-family: 'Inter';
+ font-style: normal;
+ font-weight: 400;
+ font-size: 14px;
+ line-height: 20px;
+ color: #2d3440;
+ text-decoration: solid #2d3440;
 }
