@@ -21,26 +21,23 @@
           </a>
           <ul class="navigation-list">
             <li class="navigation-item">
-              <div class="submenu">
-                <button class="submenu-button" type="button">
-                  <span class="button-text">Каталог</span>
-                  <svg class="button-icon"></svg>
-                </button>
-                <ul class="popover-container submenu-list">
-                  <li class="submenu-item">
-                    <a class="submenu-link submenu-link-current">Новинки</a>
+              <div class="catalog">
+                <button class="button catalog-button" type="button">Каталог</button>
+                <ul class="popover-container catalog-list">
+                  <li class="catalog-item">
+                    <a class="catalog-link catalog-link-current" href="#">Новинки</a>
                   </li>
-                  <li class="submenu-item">
-                    <a class="submenu-link">Сливочное</a>
+                  <li class="catalog-item">
+                    <a class="catalog-link" href="#">Сливочное</a>
                   </li>
-                  <li class="submenu-item">
-                    <a class="submenu-link">Щербеты</a>
+                  <li class="catalog-item">
+                    <a class="catalog-link" href="#">Щербеты</a>
                   </li>
-                  <li class="submenu-item">
-                    <a class="submenu-link">Фруктовый лед</a>
+                  <li class="catalog-item">
+                    <a class="catalog-link" href="#">Фруктовый лед</a>
                   </li>
-                  <li class="submenu-item">
-                    <a class="submenu-link">Мелорин</a>
+                  <li class="catalog-item">
+                    <a class="catalog-link" href="#">Мелорин</a>
                   </li>
                 </ul>
               </div>
@@ -54,11 +51,9 @@
           </ul>
         </nav>
         <div class="user-menu">
-          <a class="user-phone-link" href="tel:+7 800 555-86-28">+7 800 555-86-28</a>
+          <a class="user-phone-link" href="tel:+7800555-86-28">+7 800 555-86-28</a>
           <div class="user-item">
-            <button class="user-button search" type="button" aria-lebel="Поиск">
-              <svg class="search-icon"></svg>
-            </button>
+            <button class="button user-button-search" type="button" aria-label="Поиск"></button>
             <div class="popover-container search-container">
               <form class="search-form" action="https://echo.htmlacademy.ru/" method="get">
                 <input class="search-input" type="search" name="search" placeholder="Поиск по сайту"
@@ -67,27 +62,21 @@
             </div>
           </div>
           <div class="user-item">
-            <button class="user-button entrance" type="button" aria-label="Вход в личный кабинет">
-              <svg class="entrance-icon"></svg>
-              <span class="button-text">Вход</span>
-            </button>
-            <div class="popover-container entrance-container">
+            <button class="button user-button-login" type="button" aria-label="Вход в личный кабинет">Вход</button>
+            <div class="popover-container login-container">
               <h2 class="popover-title">Личный кабинет</h2>
-              <form class="entrance-form" action="https://echo.htmlacademy.ru/" method="get">
-                <input class="entrance-input" type="email" name="e-mail" placeholder="email@example.com"
+              <form class="login-form" action="https://echo.htmlacademy.ru/" method="get">
+                <input class="login-input" type="email" name="e-mail" placeholder="email@example.com"
                   aria-label="Адрес электронной почты" required>
-                <input class="entrance-input" type="password" name="password" aria-label="Введите пароль" required>
+                <input class="login-input" type="password" name="password" aria-label="Введите пароль" required>
                 <button class="button-form" type="submit">Войти</button>
               </form>
-              <a class="entrance-link" href="#">Забыли пароль?</a>
-              <a class="entrance-link" href="#">Регистрация</a>
+              <a class="login-link" href="#">Забыли пароль?</a>
+              <a class="login-link" href="#">Регистрация</a>
             </div>
           </div>
           <div class="user-item">
-            <button class="user-button cart" type="button">
-              <svg class="cart-icon"></svg>
-              <span class="button-text">2 товара</span>
-            </button>
+            <button class="button user-button-cart" type="button" aria-label="Корзина">2 товара</button>
             <div class="popover-container cart-container">
               <h2 class="popover-title">Корзина</h2>
               <ul class="cart-list">
@@ -101,9 +90,7 @@
                   </a>
                   <span class="cart-property">1 кг х 310 ₽</span>
                   <span class="cart-price">310 ₽</span>
-                  <button class="cart-button" type="button" aria-label="Удалить товар из корзины">
-                    <svg class=cart-icon></svg>
-                  </button>
+                  <button class="cart-button" type="button" aria-label="Удалить товар из корзины"></button>
                 </li>
                 <li class="cart-item">
                   <a class="cart-link" href="#">
@@ -115,9 +102,7 @@
                   </a>
                   <span class="cart-property">1,5 кг х 320 ₽</span>
                   <span class="cart-price">480 ₽</span>
-                  <button class="cart-button" type="button" aria-label="Удалить товар из корзины">
-                    <svg class=cart-icon></svg>
-                  </button>
+                  <button class="cart-button" type="button" aria-label="Удалить товар из корзины"></button>
                 </li>
               </ul>
               <button class="button-form" type="submit">Оформить заказ</button>
@@ -128,16 +113,8 @@
             </div>
           </div>
         </div>
-
+      </header>
     </div>
-    </div>
-    </header>
-    <main class="index-main"></main>
-    <footer class="page-footer"></footer>
-
-    </div>
-
-
   </body>
 
 </html>
