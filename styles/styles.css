@@ -89,17 +89,26 @@ body {
 }
 
 .navigation-logo {
+  transition: opacity 0.3s ease;
+}
 
+.navigation-logo:hover {
+  opacity: 0.6;
+}
+
+.navigation-logo:focus-visible {
+  outline: none;
+  opacity: 0.6;
+}
+
+.navigation-logo:active {
+  opacity: 0.3;
 }
 
 .navigation-list {
  margin: 0;
  list-style-type: none;
  display: flex;
-
-}
-
-.navigation-item {
 
 }
 
@@ -146,85 +155,23 @@ body {
  line-height: 20px;
  color: #2d3440;
  text-decoration: none;
+ transition: opacity 0.3s ease;
 }
 
-.user-button-search {
-  width: 32px;
-  border-radius: 27px;
-  padding: 15px;
-  background-color: rgba(252, 252, 252, 0.3);
-  position: relative;
-  transition: background-color 0.3s ease;
+.user-phone-link:hover {
+  opacity: 0.6;
 }
 
-.user-button-search::after {
-  content: "";
-  width: 13px;
-  height: 13px;
-  position: absolute;
-  top: 9px;
-  right: 9px;
-  mask: url("../images/svg/icon-search.svg");
-  -webkit-mask: url("../images/svg/icon-search.svg");
-  mask-size: contain;
-  -webkit-mask-size: contain;
-  background-color: #2d3440;
-  transition: background-color 0.3s ease;
+.user-phone-link:focus-visible {
+  opacity: 0.6;
+  outline: none;
 }
 
-.user-button-login {
-  width: 88px;
-  padding: 6px 16px 6px 38px;
-  background-color: rgba(252, 252, 252, 0.3);
-  border-radius: 30px;
-  font-size: 14px;
-  line-height: 20px;
-  position: relative;
-  transition: background-color 0.3s ease;
+.user-phone-link:active {
+  opacity: 0.3;
 }
 
-.user-button-login::before {
-  content: "";
-  width: 16px;
-  height: 16px;
-  margin-right: 6px;
-  position: absolute;
-  top: 9px;
-  left: 17px;
-  mask: url("../images/svg/icon-login.svg");
-  -webkit-mask: url("../images/svg/icon-login.svg") ;
-  mask-size: contain;
-  -webkit-mask-size: contain;
-  background-color: #2d3440;
-  transition: background-color 0.3s ease;
-}
-
-.user-button-cart {
-  width: 115px;
-  padding: 6px 16px 6px 38px;
-  background-color: rgba(252, 252, 252, 0.3);
-  border-radius: 30px;
-  font-size: 14px;
-  line-height: 20px;
-  position: relative;
-  transition: background-color 0.3s ease;
-}
-
-.user-button-cart::before {
-  content: "";
-  width: 14px;
-  height: 14px;
-  margin-right: 6px;
-  position: absolute;
-  top: 9px;
-  left: 17px;
-  mask: url("../images/svg/icon-cart.svg");
-  -webkit-mask: url("../images/svg/icon-cart.svg");
-  mask-size: contain;
-  -webkit-mask-size: contain;
-  background-color: #2d3440;
-  transition: background-color 0.3s ease;
-}
+/*состояния кнопок в шапке*/
 
 .user-button-search:hover,
 .user-button-login:hover,
@@ -246,13 +193,7 @@ body {
   box-shadow: inset 0 0 0 2px #2d3440;
 }
 
-
-
 /*каталог*/
-
-.catalog-list {
-  display: none;
-}
 
 .catalog-button {
   font-weight: 400;
@@ -261,6 +202,7 @@ body {
   padding: 8px 38px 8px 16px;
   position: relative;
   border-radius: 30px;
+  transition: background-color 0.3s ease, color 0.3s ease, opacity 0.3s ease;
 }
 
 .catalog-button::after {
@@ -269,8 +211,8 @@ body {
   height: 6px;
   margin-left: 8px;
   position: absolute;
-  mask: url(../images/svg/icon-arrow.svg);
-  -webkit-mask: url(../images/svg/icon-arrow.svg);
+  mask: url("../images/svg/icon-arrow.svg");
+  -webkit-mask: url("../images/svg/icon-arrow.svg");
   mask-size: contain;
   -webkit-mask-size: contain;
   background-color: #2d3440;
@@ -279,17 +221,31 @@ body {
   transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
-.catalog:focus-within .catalog-list {
+.catalog:focus-within .catalog-container {
   display: block;
 }
 
+.catalog:focus-within .catalog-button:not(:focus-visible) {
+  background-color: #ff4a78;
+  color: #fcfcfc;
+}
+
+.catalog:focus-within .catalog-button:not(:focus-visible):hover {
+  opacity: 0.6;
+}
+
+.catalog:focus-within .catalog-button:not(:focus-visible)::after {
+  background-color: #fcfcfc;
+}
+
 .catalog:focus-within .catalog-button::after {
-  transform: rotate(180 deg);
+  transform: rotate(180deg);
 }
 
 .catalog-list {
   margin: 0;
   list-style-type: none;
+  padding: 8px 0;
 }
 
 .catalog-link {
@@ -321,14 +277,48 @@ body {
 
 /*поиск*/
 
-.user-button-search:focus-within .popover-container {
+.user-button-search {
+  min-width: 32px;
+  min-height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 27px;
+  padding: 8px;
+  background-color: rgba(252, 252, 252, 0.3);
+  position: relative;
+  transition: background-color 0.3s ease;
+}
+
+.user-button-search::after {
+  content: "";
+  width: 13px;
+  height: 13px;
+  position: absolute;
+  mask: url("../images/svg/icon-search.svg");
+  -webkit-mask: url("../images/svg/icon-search.svg");
+  mask-size: contain;
+  -webkit-mask-size: contain;
+  background-color: #2d3440;
+  transition: background-color 0.3s ease;
+}
+
+.user-item-search:focus-within .search-container {
   display: block;
+}
+
+.user-item-search:focus-within .user-button-search:not(:focus-visible) {
+  background-color: #ff4a78;
+}
+
+.user-item-search:focus-within .user-button-search:not(:focus-visible)::after {
+  background-color: #fcfcfc;
 }
 
 
 /*личный кабинет*/
 
-.entrance-link {
+.login-link {
  font-family: 'Inter';
  font-style: normal;
  font-weight: 400;
@@ -336,4 +326,108 @@ body {
  line-height: 20px;
  color: #2d3440;
  text-decoration: solid #2d3440;
+}
+
+.user-button-login {
+  width: 88px;
+  padding: 6px 16px 6px 38px;
+  background-color: rgba(252, 252, 252, 0.3);
+  border-radius: 30px;
+  font-size: 14px;
+  line-height: 20px;
+  position: relative;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.user-button-login::before {
+  content: "";
+  width: 16px;
+  height: 16px;
+  margin-right: 6px;
+  position: absolute;
+  top: 9px;
+  left: 17px;
+  mask: url("../images/svg/icon-login.svg");
+  -webkit-mask: url("../images/svg/icon-login.svg") ;
+  mask-size: contain;
+  -webkit-mask-size: contain;
+  background-color: #2d3440;
+  transition: background-color 0.3s ease;
+}
+
+.user-item-login:focus-within .login-container {
+  display: block;
+}
+
+.user-item-login:focus-within .user-button-login:not(:focus-visible) {
+  background-color: #ff4a78;
+  color: #fcfcfc;
+}
+
+.user-item-login:focus-within .user-button-login:not(:focus-visible)::before {
+  background-color: #fcfcfc;
+}
+
+/*корзина*/
+
+.user-button-cart {
+  width: 115px;
+  padding: 6px 16px 6px 38px;
+  background-color: rgba(252, 252, 252, 0.3);
+  border-radius: 30px;
+  font-size: 14px;
+  line-height: 20px;
+  position: relative;
+  transition: background-color 0.3s ease, color 0.3 ease;
+}
+
+.user-button-cart::before {
+  content: "";
+  width: 14px;
+  height: 14px;
+  margin-right: 6px;
+  position: absolute;
+  top: 9px;
+  left: 17px;
+  mask: url("../images/svg/icon-cart.svg");
+  -webkit-mask: url("../images/svg/icon-cart.svg");
+  mask-size: contain;
+  -webkit-mask-size: contain;
+  background-color: #2d3440;
+  transition: background-color 0.3s ease;
+}
+
+.user-item-cart:focus-within .cart-container {
+  display: block;
+}
+
+.user-item-cart:focus-within .user-button-cart:not(:focus-visible) {
+  background-color: #ff4a78;
+  color: #fcfcfc;
+}
+
+.user-item-cart:focus-within .user-button-cart:not(:focus-visible)::before {
+  background-color: #fcfcfc;
+}
+
+ /*корзина пуста*/
+
+.cart-container-empty {
+  width: 288px;
+  padding: 40px 20px;
+  text-align: center;
+
+}
+
+.user-item-cart-empty:focus-within .cart-container-empty {
+  display: block;
+}
+
+.user-item-cart-empty:focus-within .user-button-cart:not(:focus-visible) {
+  background-color: #ff4a78;
+  color: #fcfcfc;
+}
+
+.user-item-cart-empty:focus-within .user-button-cart:not(:focus-visible)::before {
+  background-color: #fcfcfc;
 }

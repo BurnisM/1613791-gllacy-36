@@ -23,23 +23,23 @@
             <li class="navigation-item">
               <div class="catalog">
                 <button class="button catalog-button" type="button">Каталог</button>
-                <ul class="popover-container catalog-list">
-                  <li class="catalog-item">
-                    <a class="catalog-link catalog-link-current" href="#">Новинки</a>
-                  </li>
-                  <li class="catalog-item">
-                    <a class="catalog-link" href="#">Сливочное</a>
-                  </li>
-                  <li class="catalog-item">
-                    <a class="catalog-link" href="#">Щербеты</a>
-                  </li>
-                  <li class="catalog-item">
-                    <a class="catalog-link" href="#">Фруктовый лед</a>
-                  </li>
-                  <li class="catalog-item">
-                    <a class="catalog-link" href="#">Мелорин</a>
-                  </li>
-                </ul>
+                <div class="popover-container catalog-container">
+                  <h3 class="catalog-title">Новинки</h3>
+                  <ul class="catalog-list">
+                    <li class="catalog-item">
+                      <a class="catalog-link" href="#">Сливочное</a>
+                    </li>
+                    <li class="catalog-item">
+                      <a class="catalog-link" href="#">Щербеты</a>
+                    </li>
+                    <li class="catalog-item">
+                      <a class="catalog-link" href="#">Фруктовый лед</a>
+                    </li>
+                    <li class="catalog-item">
+                      <a class="catalog-link" href="#">Мелорин</a>
+                    </li>
+                  </ul>
+                </div>
               </div>
             </li>
             <li class="navigation-item">
@@ -52,7 +52,7 @@
         </nav>
         <div class="user-menu">
           <a class="user-phone-link" href="tel:+7800555-86-28">+7 800 555-86-28</a>
-          <div class="user-item">
+          <div class="user-item-search">
             <button class="button user-button-search" type="button" aria-label="Поиск"></button>
             <div class="popover-container search-container">
               <form class="search-form" action="https://echo.htmlacademy.ru/" method="get">
@@ -61,7 +61,7 @@
               </form>
             </div>
           </div>
-          <div class="user-item">
+          <div class="user-item-login">
             <button class="button user-button-login" type="button" aria-label="Вход в личный кабинет">Вход</button>
             <div class="popover-container login-container">
               <h2 class="popover-title">Личный кабинет</h2>
@@ -75,7 +75,8 @@
               <a class="login-link" href="#">Регистрация</a>
             </div>
           </div>
-          <div class="user-item">
+          <!--Для показа пустой корзины нужно заменить класс user-item-cart на user-item-cart-empty-->
+          <div class="user-item-cart">
             <button class="button user-button-cart" type="button" aria-label="Корзина">2 товара</button>
             <div class="popover-container cart-container">
               <h2 class="popover-title">Корзина</h2>
@@ -108,8 +109,8 @@
               <button class="button-form" type="submit">Оформить заказ</button>
               <span class="cart-price">Итого: 790 ₽</span>
             </div>
-            <div class="popover-container cart-container-none">
-              <h3 class="popover-title">Ваша корзина пока пуста</h3>
+            <div class="popover-container cart-container-empty">
+              <h3 class="popover-title">Ваша корзина пока<br>пуста</h3>
             </div>
           </div>
         </div>
