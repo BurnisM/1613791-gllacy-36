@@ -76,6 +76,7 @@ body {
 .page-header {
   display: flex;
   justify-content: space-between;
+  gap: 40px;
   padding: 24px 0;
 
 }
@@ -84,11 +85,15 @@ body {
 
 .navigation {
   display: flex;
-  margin: auto 0;
+  align-items: center;
+  flex-wrap: wrap;
+  min-width: 575px;
 
 }
 
 .navigation-logo {
+  display: flex;
+  margin-right: 16px;
   transition: opacity 0.3s ease;
 }
 
@@ -97,7 +102,6 @@ body {
 }
 
 .navigation-logo:focus-visible {
-  outline: none;
   opacity: 0.6;
 }
 
@@ -107,8 +111,11 @@ body {
 
 .navigation-list {
  margin: 0;
+ padding: 0;
  list-style-type: none;
  display: flex;
+ flex-wrap: wrap;
+ min-width: 422px;
 
 }
 
@@ -129,7 +136,6 @@ body {
 
 .navigation-link:focus-visible,
 .catalog-button:focus-visible {
-  outline: none;
   background-color: rgba(252, 252, 252, 0.5);
   box-shadow: inset 0 0 0 2px #2D3440;
 }
@@ -143,11 +149,14 @@ body {
 
 .user-menu {
   display: flex;
+  flex-wrap: wrap;
   gap: 16px;
-  margin: auto 0;
+  align-items: center;
+  min-width: 431px;
 }
 
 .user-phone-link {
+ padding: 6px 0 6px 0;
  font-family: 'Inter';
  font-style: normal;
  font-weight: 700;
@@ -164,7 +173,6 @@ body {
 
 .user-phone-link:focus-visible {
   opacity: 0.6;
-  outline: none;
 }
 
 .user-phone-link:active {
@@ -194,6 +202,10 @@ body {
 }
 
 /*каталог*/
+
+.catalog {
+  position: relative;
+}
 
 .catalog-button {
   font-weight: 400;
@@ -242,20 +254,53 @@ body {
   transform: rotate(180deg);
 }
 
+.catalog-container {
+  min-width: 135px;
+  padding: 8px 0 8px 0;
+  display: flex;
+  flex-direction: column;
+}
+
 .catalog-list {
   margin: 0;
+  margin-top: 4px;
   list-style-type: none;
-  padding: 8px 0;
+  padding: 0;
+
+}
+
+.catalog-title {
+  display: flex;
+  margin: 0 16px;
+  padding: 8px 0 12px 0;
+  border-bottom: 1px solid #B9B9B9;
 }
 
 .catalog-link {
- font-family: 'Inter';
- font-style: normal;
- font-weight: 400;
- font-size: 14px;
- line-height: 20px;
- color: #2d3440;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #2d3440;
+  text-decoration: none;
+  display: block;
+  padding: 6px 14px;
+  transition: background-color 0.3s eas;
 }
+
+.catalog-link:hover {
+  background-color: #FFCBD8;
+}
+
+.catalog-link:active {
+  background-color: #f7799f;
+}
+
+.catalog-link.current {
+  background-color: #FF4A78;
+}
+
 
 /*поповер*/
 
