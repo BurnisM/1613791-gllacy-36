@@ -1,5 +1,6 @@
 {
   "recommendations": [
-    "EditorConfig.EditorConfig"
+    "editorconfig.editorconfig",
+    "figma.figma-vscode-extension"
   ]
 }
