@@ -479,6 +479,7 @@ body {
   text-align: center;
   padding: 12px 32px;
   outline: 4px solid rgba(255,47,100,0.30);
+  /*box-shadom: 0 0 0 4px rgba(255,47,100,0.30);*/
   border-radius: 26px;
   background-color: #FF2F64;
 
