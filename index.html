@@ -56,8 +56,11 @@
             <button class="button user-button-search" type="button" aria-label="Поиск"></button>
             <div class="popover-container search-container">
               <form class="search-form" action="https://echo.htmlacademy.ru/" method="get">
-                <input class="search-input" type="search" name="search" placeholder="Поиск по сайту"
-                  aria-label="Поиск по сайту" required>
+                <div class="search-form-wrapper">
+                  <input class="search-input" type="search" name="search" placeholder="Поиск по сайту"
+                    aria-label="Поиск по сайту" required>
+                  <button class="button search-form-reset" type="reset"></button>
+                </div>
               </form>
             </div>
           </div>
@@ -70,7 +73,7 @@
                   aria-label="Адрес электронной почты" required>
                 <input class="login-input login-password" type="password" name="password" aria-label="Введите пароль"
                   required>
-                <button class="button button-form" type="submit">Войти</button>
+                <button class="button button-primary is-loading" type="submit">Войти</button>
               </form>
               <a class="login-link link-password" href="#">Забыли пароль?</a>
               <a class="login-link link-chekin" href="#">Регистрация</a>
@@ -111,7 +114,7 @@
                   </button>
                 </li>
               </ul>
-              <button class="button button-form" type="submit">Оформить заказ</button>
+              <button class="button button-primary" type="submit">Оформить заказ</button>
               <span class="cart-price">Итого: 790 ₽</span>
             </div>
             <div class="popover-container cart-container-empty">
@@ -120,6 +123,13 @@
           </div>
         </div>
       </header>
+      <main class="main-index">
+        <h1 class="visually-hidden">Добро пожаловать в интернет-магазин натурального мороженного "Gllacy".</h1>
+        <div class="slaider">
+          <h2 class="slider-title">Нежный пломбир с клубничным джемом</h2>
+          <p class="slider-paragraf"></p>
+        </div>
+      </main>
     </div>
   </body>
 
