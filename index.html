@@ -74,9 +74,11 @@
                 <input class="login-input login-password" type="password" name="password" aria-label="Введите пароль"
                   required>
                 <button class="button button-primary is-loading" type="submit">Войти</button>
+                <div class="login-link-wrapper">
+                  <a class="login-link" href="#">Забыли пароль?</a>
+                  <a class="login-link" href="#">Регистрация</a>
+                </div>
               </form>
-              <a class="login-link link-password" href="#">Забыли пароль?</a>
-              <a class="login-link link-chekin" href="#">Регистрация</a>
             </div>
           </div>
           <!--Для показа пустой корзины нужно заменить класс user-item-cart на user-item-cart-empty-->
@@ -90,10 +92,12 @@
                     <img class="cart-image" src="./images/content/cart-malink.png" width="46" height="46"
                       alt="мороженое Малинка.">
                   </a>
-                  <a class="cart-link" href="#">
+                  <div class="product-wrapper">
+                    <a class="cart-link" href="#"></a>
                     <h3 class="cart-title">Малинка</h3>
-                  </a>
-                  <span class="cart-property">1 кг х 310 ₽</span>
+                    </a>
+                    <span class="cart-property">1 кг х 310 ₽</span>
+                  </div>
                   <span class="cart-price">310 ₽</span>
                   <button class="button cart-button" type="button" aria-label="Удалить товар из корзины">
                     <img src="./images/svg/icon-cross.svg" width="16" height="16" alt="Удалить товар из корзины">
@@ -104,18 +108,22 @@
                     <img class="cart-image" src="./images/content/cart-babl-gam.png" width="46" height="46"
                       alt="мороженое Бабл-гам.">
                   </a>
-                  <a class="cart-link" href="#">
-                    <h3 class="cart-title">Бабл-гам</h3>
-                  </a>
-                  <span class="cart-property">1,5 кг х 320 ₽</span>
+                  <div class="product-wrapper">
+                    <a class="cart-link" href="#">
+                      <h3 class="cart-title">Бабл-гам</h3>
+                    </a>
+                    <span class="cart-property">1,5 кг х 320 ₽</span>
+                  </div>
                   <span class="cart-price">480 ₽</span>
                   <button class="button cart-button" type="button" aria-label="Удалить товар из корзины">
                     <img src="./images/svg/icon-cross.svg" width="16" height="16" alt="Удалить товар из корзины">
                   </button>
                 </li>
               </ul>
-              <button class="button button-primary" type="submit">Оформить заказ</button>
-              <span class="cart-price">Итого: 790 ₽</span>
+              <div class="cart-ordering-wrapper">
+                <button class="button button-primary" type="submit">Оформить заказ</button>
+                <span class="cart-price">Итого: 790 ₽</span>
+              </div>
             </div>
             <div class="popover-container cart-container-empty">
               <h3 class="popover-title">Ваша корзина пока<br>пуста</h3>
@@ -127,7 +135,9 @@
         <h1 class="visually-hidden">Добро пожаловать в интернет-магазин натурального мороженного "Gllacy".</h1>
         <div class="slaider">
           <h2 class="slider-title">Нежный пломбир с клубничным джемом</h2>
-          <p class="slider-paragraf"></p>
+          <p class="slider-paragraf">Натуральное мороженое из свежих сливок<br>
+            и молока с вкуснейшим клубничным джемом –<br>это идеальный десерт для всей семьи.</p>
+          <button class="button button-secondary" type="button">Заказать</a>
         </div>
       </main>
     </div>

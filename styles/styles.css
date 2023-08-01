@@ -536,23 +536,13 @@ body {
 }
 
 
+
 /*личный кабинет*/
 
 .login-container {
   padding: 48px;
   padding-top: 52px;
   min-width: 420px;
-  /*display: grid;
-  grid-template-columns: 116px 1fr;
-  grid-template-rows: 30px 48px 48px 20px 20px;
-  grid-template-areas:
-   "title title"
-   "mail mail"
-   "password password"
-   "button link-password"
-   "button link-chekin";
-   row-gap: 16px;*/
-
 }
 
 .login-link {
@@ -606,6 +596,11 @@ body {
   background-color: #fcfcfc;
 }
 
+.login-form {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .login-input {
   width: 324px;
   padding: 16px 14px;
@@ -617,38 +612,20 @@ body {
   background-color: #ffffff;
 }
 
-/*
-.button-form {
-  display: block;
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 20px;
-  color:#FCFCFC;
-  text-align: center;
-  padding: 12px 32px;
-  outline: 4px solid rgba(255,47,100,0.30);
-  /*box-shadom: 0 0 0 4px rgba(255,47,100,0.30);
-  border-radius: 26px;
-  background-color: #FF2F64;
+.login-link-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin-left: 23px;
 }
-*/
 
 .login-mail {
-  grid-area: mail;
+  margin-bottom: 16px;
 }
 
 .login-password {
-  grid-area: password;
+  margin-bottom: 32px;
 }
-
-.link-password {
-  grid-area: link-password;
-}
-
-.link-chekin {
-  grid-area: link-chekin;
-}
-
 
 /*корзина*/
 
@@ -660,7 +637,17 @@ body {
 .cart-list {
   padding: 0;
   margin: 0;
+  margin-bottom: 32px;
   list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.cart-item {
+  display: flex;
+  align-items: center;
+  gap: 16px;
 }
 
 .cart-link {
@@ -672,6 +659,39 @@ body {
   font-size: 18px;
   font-weight: 700;
   line-height: 22px;
+  margin: 0;
+}
+
+.product-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.cart-property {
+  font-size: 14px;
+  line-height: 20px;
+  color: #B9B9B9;
+}
+
+.cart-price {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 22px;
+  color: #2D3440;
+  margin-left: auto;
+}
+
+.cart-button {
+  margin-left: auto;
+}
+
+.cart-ordering-wrapper {
+  display: flex;
+  gap: 30px;
+  align-items: baseline;
+  padding-top: 32px;
+  border-top: 1px solid#E7E7E7;
 }
 
 .user-button-cart {
