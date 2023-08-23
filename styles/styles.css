@@ -69,6 +69,7 @@ body {
   padding: 0;
   font-family: inherit;
   cursor: pointer;
+  text-decoration: none;
 }
 
 .button-primary {
@@ -1027,39 +1028,40 @@ body {
   margin: 0;
   padding: 0;
   list-style-type: none;
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   gap: 30px;
 }
 
 .banners-item {
   display: flex;
-  gap: 11px;
-  align-items: center;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 28px;
   border-radius: 16px;
   background-color: #F79;
-  padding-left: 36px;
-}
-
-.banners-content {
-  width: 304px;
+  padding: 36px 220px 36px 36px;
+  position: relative;
 }
 
 .banners-title {
   margin: 0;
-  margin-bottom: 28px;
 }
 
 .banners-description {
   margin: 0;
-  margin-bottom: 28px;
 }
 
 .banners-link {
-  text-decoration: none;
+  margin-top: auto;
+
 }
 
 .banners-image-self {
-  display: flex;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+
 }
 
 /*goods*/
@@ -1072,19 +1074,36 @@ body {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  display: flex;
-  gap: 30px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 30px;
+  row-gap: 40px;
 }
 
 .goods-item {
-  padding-top: 51px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+  border-radius: 8px;
+  padding: 0 40px 28px 40px;
 }
 
-.goods-card {
-  min-width: 270px;
-  padding: 133px 40px 28px 40px;
+.goods-item::before {
+  content: "";
+  width: 100%;
+  height: calc(100% - 51px);
   background-color: #fcfcfc;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
   border-radius: 8px;
+}
+
+.goods-img {
+  margin-bottom: 16px;
 }
 
 .goods-title {
@@ -1107,6 +1126,9 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  width: 100%;
+  margin-top: auto;
+  gap: 20px;
 }
 
 .cards-price {
@@ -1174,10 +1196,17 @@ body {
 /*about*/
 
 .about {
+  background-image: url("../images/background/about.png");
+  padding: 24px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 16px;
+}
+
+.about-wrapper {
   padding: 56px 40px;
   border-radius: 16px;
   background-color: #ffffff;
-  border: 24px solid #F79;
 }
 
 .about-list {
@@ -1186,29 +1215,45 @@ body {
   padding: 0;
   list-style-type: none;
   display: grid;
-  grid-template-columns: 506px 506px;
-  grid-template-rows: 66px 66px;
+  grid-template-columns: 1fr 1fr;
   column-gap: 32px;
   row-gap: 40px;
 }
 
-.about-description {
-  min-width: 506px;
-  display: flex;
+.about-item {
+  display: grid;
+  grid-template-columns: 48px 1fr;
   gap: 16px;
+}
+
+.about-description {
+  display: block;
   margin: 0;
   color: #565C66;
   font-weight: 400;
-
 }
 
-.about-description::before {
+.about-item::before {
   display: block;
   content: "";
   width: 48px;
   height: 48px;
-  background-image: url("../images/svg/about-icon-ice-cream.svg");
-  background-position: contain;
+  background-size: contain;
   background-repeat: no-repeat;
+}
 
+.about-ice-cream::before {
+  background-image: url("../images/svg/about-icon-ice-cream.svg");
+}
+
+.about-cow::before {
+  background-image: url("../images/svg/about-icon-cow.svg");
+}
+
+.about-tree-leaf::before {
+  background-image: url("../images/svg/about-icon-tree-leaf.svg");
+}
+
+.about-thermometer::before {
+  background-image: url("../images/svg/about-icon-thermometer.svg");
 }
