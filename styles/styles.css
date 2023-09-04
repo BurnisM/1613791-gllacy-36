@@ -929,8 +929,8 @@ body {
   position: absolute;
   border-radius: 50%;
   content: "";
-  width: 23px;
-  height: 23px;
+  width: 22px;
+  height: 22px;
   background-color: #2d3440;
   z-index: -1;
   opacity: 0;
@@ -1256,4 +1256,179 @@ body {
 
 .about-thermometer::before {
   background-image: url("../images/svg/about-icon-thermometer.svg");
+}
+
+/*subscription-news*/
+
+.subscription-news {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+
+.news {
+  padding: 32px 235px 67px 32px;
+  border-radius: 16px;
+  background-image: url(../images/background/news.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.news-description {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #565C66;
+  margin: 0 0 12px 0;
+}
+
+.news-title {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 30px;
+  color: #2d3440;
+  margin: 0;
+}
+
+.subscription {
+  background-image: url(../images/background/subsc.png);
+  background-color: lightgray;
+  background-size: contain;
+  border-radius: 16px;
+  padding: 6px;
+}
+
+.subscription-wrapper {
+  background-color: #ffffff;
+  padding: 26px;
+  border-radius: 16px;
+}
+
+.subscription-description {
+   color: #565C66;
+   font-size: 16px;
+   font-weight: 400;
+   line-height: 22px;
+   margin: 0 0 42px 0;
+}
+
+.subscription-form {
+  display: flex;
+  gap: 15px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.subscription-input {
+  width: 332px;
+  padding: 16px 14px;
+  font-size: 16px;
+  font-family: "Inter", sans-serif;
+  line-height: 20px;
+  border: 1px solid #B9B9B9;
+  border-radius: 4px;
+  background-color: #ffffff;
+}
+
+.subscription-input::placeholder {
+  color: #B9B9B9;
+  opacity: 1;
+}
+
+/*доставка*/
+
+.delivery {
+   background-image: url(../images/background/delivery.png);
+   background-color: lightgray;
+   background-size: cover;
+   background-position: center;
+   background-repeat: no-repeat;
+   padding: 167px 699px 163px 100px;
+   position: relative;
+}
+
+.delivery-description {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  color: #565C66;
+  margin: 0;
+}
+
+.delivery-title {
+  margin: 0 0 24px 0;
+  padding: 0;
+  font-size: 32px;
+  font-weight: 900;
+  line-height: 46px;
+  color: #2d3440;
+}
+
+.delivery-form-container {
+  width: 500px;
+  background-color: #fcfcfc;
+  border-radius: 8px;
+  padding: 40px 40px 42px 40px;
+  position: absolute;
+  top: 64px;
+  right: 64px;
+}
+
+.delivery-form {
+  width: 100%;
+}
+
+/*adress*/
+
+.address {
+  width: 100%;
+  padding: 64px 763px 64px 64px;
+  border-radius: 16px;
+  background-color: lightgray;
+  background-image: url(../images/background/adress.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.address-container {
+  background-color: #fcfcfc;
+  padding: 40px;
+  border-radius: 8px;
+}
+
+.address-container-title {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  color: #565C66;
+  margin: 0 0 12px 0;
+  padding: 0;
+}
+
+.address-container-description {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  color: #2d3440;
+  margin: 0 0 24px 0;
+  padding: 0;
+}
+
+.address-container-phone {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  color: #2d3440;
+  margin: 0;
+  padding: 0;
+}
+
+.time {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #565C66;
+  margin-bottom: 32px;
 }

@@ -311,16 +311,62 @@
             </ul>
           </div>
         </section>
+        <div class="subscription-news section-main">
+          <div class="news">
+            <p class="news-description">Новое в нашем блоге</p>
+            <h2 class="news-title">10&nbsp;способов сервировки фруктовых щербетов
+              к&nbsp;столу</h2>
+          </div>
+          <div class="subscription">
+            <div class="subscription-wrapper">
+              <p class="subscription-description">
+                Подпишитесь на&nbsp;нашу сладкую рассылку и&nbsp;будьте всегда
+                в&nbsp;курсе всего самого вкусного, что у&nbsp;нас происходит. Обещаем не&nbsp;спамить
+                и&nbsp;не&nbsp;слать всякой
+                ненужной ерунды. Честно =)
+              </p>
+              <form class="subscription-form" action="https://echo.htmlacademy.ru/" method="get">
+                <input class="subscription-input" type="email" name="e-mail" placeholder="email@example.com"
+                  aria-label="Адрес электронной почты" required>
+                <button class="button button-primary" type="submit">Отправить</button>
+              </form>
+            </div>
+          </div>
+        </div>
         <section class="delivery section-main">
-          <h2 class="section-title">Доставка любимого мороженого на дом</h2>
+          <h2 class="section-title delivery-title">Доставка любимого мороженого на дом</h2>
+          <p class="delivery-description">
+            Хочется полакомиться любимым десертом, но&nbsp;нет времени съездить в&nbsp;магазин? Закажите доставку
+            мороженого
+            на&nbsp;дом, и&nbsp;курьер привезёт вам ваш заказ в&nbsp;течение часа!
+          </p>
           <div class="delivery-form-container">
             <p>Укажите адрес и&nbsp;дату доставки, и&nbsp;мы&nbsp;свяжемся с&nbsp;вами, чтобы подтвердить заказ.</p>
             <form class="delivery-form" action="https://echo.htmlacademy.ru/" method="get">
               <label class="delivery-input-name">Дата
-                <input class="delivery-input" type="date" name="">
+                <input class="delivery-input" type="text" name="date" aria-label="Выберите дату доставки"
+                  placeholder="01.04.2020">
               </label>
-
+              <label class="delivery-input-name">Телефон
+                <input class="delivery-input" type="tel" name="tel" aria-label="Укажите телефон">
+              </label>
+              <label class="delivery-input-name">Адрес
+                <input class="delivery-input" type="text" name="adress" aria-label="Укажите адрес доставки"
+                  placeholder="ул. Большая Конюшенная, 19/8">
+              </label>
+              <button class="button button-primary" type="submit">Отправить</button>
             </form>
+          </div>
+        </section>
+        <section class="address">
+          <h2 class="visually-hidden">Свяжитесь с нами</h2>
+          <div class="address-container">
+            <h3 class="address-container-title">Адрес главного офиса и&nbsp;офлайн-магазина:</h3>
+            <p class="address-container-description">наб. реки Карповки, 5&nbsp;лит П, Санкт-Петербург</p>
+            <h3 class="address-container-title">Для заказов по телефону:</h3>
+            <p class="address-container-phone">+7 (812) 812-12-12</p>
+            <span class="time">(с 10 до 20 ежедневно)</span>
+            <button class="button button-primary" type="button">Форма обратной связи</button>
           </div>
         </section>
     </div>
