@@ -1464,3 +1464,21 @@ body {
   color: #565C66;
   margin-bottom: 32px;
 }
+
+/* футер */
+
+.page-footer {
+  padding-top: 48px;
+  padding-bottom: 48px;
+  display: flex;
+  justify-content: space-between;
+  align-self: start;
+
+}
+
+.menu-list {
+  list-style-type: none;
+  margin: 0;
+  display: grid;
+  grid-template-columns: 150px 182px;
+}
