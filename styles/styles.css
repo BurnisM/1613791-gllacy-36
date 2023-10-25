@@ -192,6 +192,21 @@ body {
   animation-timing-function: linear;
 }
 
+.form-input {
+  padding: 16px 14px;
+  font-size: 16px;
+  font-family: "Inter", sans-serif;
+  line-height: 20px;
+  box-shadow: 0 0 0 1px #B9B9B9;
+  border-radius: 4px;
+  background-color: #ffffff;
+}
+
+.form-input::placeholder {
+  color: #B9B9B9;
+  opacity: 1;
+}
+
 /*шапка*/
 
 .page-header {
@@ -1354,16 +1369,19 @@ body {
 
 .subscription-input {
   width: 332px;
+}
+
+.form-input {
   padding: 16px 14px;
   font-size: 16px;
   font-family: "Inter", sans-serif;
   line-height: 20px;
-  border: 1px solid #B9B9B9;
+  box-shadow: 0 0 0 1px #B9B9B9;
   border-radius: 4px;
   background-color: #ffffff;
 }
 
-.subscription-input::placeholder {
+.form-input::placeholder {
   color: #B9B9B9;
   opacity: 1;
 }
@@ -1371,13 +1389,19 @@ body {
 /*доставка*/
 
 .delivery {
-   background-image: url(../images/background/delivery.png);
+   background-image: url("../images/background/delivery.png");
    background-color: lightgray;
    background-size: cover;
    background-position: center;
    background-repeat: no-repeat;
-   padding: 167px 699px 163px 100px;
-   position: relative;
+   padding: 64px 64px 64px 100px;
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   gap: 135px;
+}
+.delivery-content-container {
+  padding-top: 103px;
+  padding-bottom: 99px;
 }
 
 .delivery-description {
@@ -1402,13 +1426,28 @@ body {
   background-color: #fcfcfc;
   border-radius: 8px;
   padding: 40px 40px 42px 40px;
-  position: absolute;
-  top: 64px;
-  right: 64px;
+}
+
+.delivery-form-description {
+  margin: 0 0 32px 0;
+  color: #565C66;
+  font-size: 16px;
+  line-height: 22px;
 }
 
 .delivery-form {
   width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px 16px;
+}
+
+.delivery-input-name {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-weight: 700;
+  line-height: 20px;
 }
 
 /*adress*/
@@ -1480,5 +1519,10 @@ body {
   list-style-type: none;
   margin: 0;
   display: grid;
-  grid-template-columns: 150px 182px;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px 24px;
+}
+
+.menu-item {
+
 }
