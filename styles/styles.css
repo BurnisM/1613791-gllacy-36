@@ -848,19 +848,20 @@ body {
   list-style-type: none;
   display: flex;
   gap: 40px;
+  overflow: hidden;
 }
 
 .slider-item {
   width: 100px;
-  display: flex;
+  display: grid;
   opacity: 0.4;
+  flex-shrink: 0;
 }
 
 
 .is-active.slider-item {
-  display: grid;
   grid-template-columns: 525px 327px;
-  width: 892px;
+  width: 852px;
   order: -1;
   opacity: 1;
 
@@ -889,7 +890,6 @@ body {
 }
 
 .slider-image {
-  padding: 21px 20px 26px 20px;
   position: relative;
   align-self: center;
   display: flex;
