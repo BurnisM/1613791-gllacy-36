@@ -135,7 +135,7 @@
         <h1 class="visually-hidden">Добро пожаловать в интернет-магазин натурального мороженного "Gllacy".</h1>
         <section class="slider section-main">
           <ul class="slider-list">
-            <li class="slider-item is-active">
+            <li class="slider-item is-active" data-color="#FEAFC3">
               <div class="slider-content">
                 <h2 class="slider-title">Нежный пломбир<br>с клубничным джемом</h2>
                 <p class="slider-text">Натуральное мороженое из свежих сливок<br>
@@ -147,7 +147,7 @@
                   alt="Нежный пломбир с клубничным джемом.">
               </div>
             </li>
-            <li class="slider-item">
+            <li class="slider-item" data-color="#69A9FF">
               <div class="slider-content">
                 <h2 class="slider-title">Сливочное мороженое<br>со вкусом банана</h2>
                 <p class="slider-text">Сливочное мороженое с ярким банановым вкусом подарит вам свежесть и
@@ -160,7 +160,7 @@
                   alt="Сливочное мороженое со вкусом банана.">
               </div>
             </li>
-            <li class="slider-item">
+            <li class="slider-item" data-color="#FCC850">
               <div class="slider-content">
                 <h2 class="slider-title">Карамельный пломбир<br>с маршмеллоу</h2>
                 <p class="slider-text">Необычный сладкий десерт с карамельным топпингом и кусочками зефира завоюет
@@ -347,30 +347,36 @@
               с&nbsp;вами, чтобы подтвердить заказ.</p>
             <form class="delivery-form" action="https://echo.htmlacademy.ru/" method="get">
               <label class="delivery-input-name">Дата
-                <input class="delivery-input" type="text" name="date" aria-label="Выберите дату доставки"
+                <input class="form-input" type="text" name="date" aria-label="Выберите дату доставки"
                   placeholder="01.04.2020">
               </label>
               <label class="delivery-input-name">Телефон
-                <input class="delivery-input" type="tel" name="tel" aria-label="Укажите телефон"
+                <input class="form-input" type="tel" name="tel" aria-label="Укажите телефон"
                   placeholder="+7 800 999-00-00">
               </label>
               <label class="delivery-input-name">Адрес
-                <input class="delivery-input" type="text" name="adress" aria-label="Укажите адрес доставки"
+                <input class="form-input" type="text" name="adress" aria-label="Укажите адрес доставки"
                   placeholder="ул. Большая Конюшенная, 19/8">
               </label>
-              <button class="button button-primary" type="submit">Отправить</button>
+              <button class="button button-primary delivery-form-button" type="submit">Отправить</button>
             </form>
           </div>
         </section>
-        <section class="address">
+        <section class="feedback">
           <h2 class="visually-hidden">Свяжитесь с нами</h2>
-          <div class="address-container">
-            <h3 class="address-container-title">Адрес главного офиса и&nbsp;офлайн-магазина:</h3>
-            <p class="address-container-description">наб. реки Карповки, 5&nbsp;лит П, Санкт-Петербург</p>
-            <h3 class="address-container-title">Для заказов по телефону:</h3>
-            <p class="address-container-phone">+7 (812) 812-12-12</p>
-            <span class="time">(с 10 до 20 ежедневно)</span>
-            <button class="button button-primary" type="button">Форма обратной связи</button>
+          <div class="feedback-container">
+            <div class="feedback-wrapper">
+              <p class="feedback-container-title">Адрес главного офиса и&nbsp;офлайн-магазина:</p>
+              <p class="address-description">наб. реки Карповки, 5&nbsp;лит П, Санкт-Петербург</p>
+            </div>
+            <div class="feedback-wrapper">
+              <p class="feedback-container-title">Для заказов по телефону:</p>
+              <p class="feedback-phone-description">
+                <span class="feedback-phone">+7 (812) 812-12-12</span>
+                <span class="time">(с&nbsp;10&nbsp;до&nbsp;20&nbsp;ежедневно)</span>
+              </p>
+            </div>
+            <button class="button button-primary button-feedback" type="button">Форма обратной связи</button>
           </div>
         </section>
       </main>
@@ -390,15 +396,19 @@
           </ul>
         </div>
         <div class="footer-menu">
-          <ul class="menu-list">
-            <li class="menu-item current">Для поставщиков</li>
-            <li class="menu-item">Наши документы</li>
-            <li class="menu-item">О производстве</li>
-            <li class="menu-item">Экологические стандарты</li>
+          <ul class="footer-menu-list">
+            <li class="footer-menu-item current">Для поставщиков</li>
+            <li class="footer-menu-item">Наши документы</li>
+            <li class="footer-menu-item">О производстве</li>
+            <li class="footer-menu-item">Экологические стандарты</li>
           </ul>
         </div>
         <div class="development">
-          <div class="development-logo"></div>
+          <div class="development-logo">
+            <a class="development-logo-link" href="#">
+              <img src="./images/svg/logo-htmlacademy.svg" width="93" height="27" alt="Сделано в html academy">
+            </a>
+          </div>
           <span class="development-text">Сделано в .html academy © 2021</span>
         </div>
       </footer>
