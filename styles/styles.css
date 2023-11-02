@@ -1406,12 +1406,13 @@ body {
    background-image: url("../images/background/delivery.png");
    background-color: lightgray;
    background-size: cover;
-   background-position: center;
+   background-position: left;
    background-repeat: no-repeat;
    padding: 64px 64px 64px 100px;
    display: grid;
    grid-template-columns: 1fr 1fr;
    gap: 135px;
+   border-radius: 16px;
 }
 .delivery-content-container {
   padding-top: 103px;
@@ -1440,6 +1441,7 @@ body {
   background-color: #fcfcfc;
   border-radius: 8px;
   padding: 40px 40px 42px 40px;
+  align-self: flex-start;
 }
 
 .delivery-form-description {
@@ -1454,6 +1456,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   gap: 20px 16px;
+  align-items: flex-start;
 }
 
 .delivery-input-name {
@@ -1546,10 +1549,11 @@ body {
 .time {
   line-height: 20px;
   color: #565C66;
+  font-size: 14px;
 }
 
 .button-feedback {
-  margin: auto;
+  margin: 0 auto;
 }
 
 /* футер */
