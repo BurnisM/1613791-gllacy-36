@@ -1720,15 +1720,6 @@ body {
 
 /*filter-group*/
 
-/*.catalog-filter-group {
-  border: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  flex-wrap: wrap;
-}
-*/
-
 /* range-slider */
 
 .range-scale {
@@ -1839,11 +1830,6 @@ body {
 
 /*checkbox*/
 
-.chek-input {
-  appearance: none;
-  -webkit-appearence: none;
-}
-
 .chek-box {
   display: block;
   width: 16px;
@@ -1883,5 +1869,43 @@ body {
   -webkit-mask: url("../images/svg/checkbox-on.svg");
   mask-size: contain;
   -webkit-mask-size: contain;
+  background-color: #2d3440;
+}
+
+.catalog-filter-group-wrapper {
+  background-color: #fcfcfc;
+  opacity: 0.3;
+  border-radius: 18px;
+  background-size: contain;
+  padding: 8px 24px;
+  gap: 16px;
+}
+
+.select-control {
+  background-color: transparent;
+  border: none;
+}
+
+.control {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.control-input-radio + .control-mark {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  box-shadow: 0 0 0 0 1px #2d3440;
+  position: relative;
+  display: flex;
+  margin: auto;
+}
+
+.control-input-radio + .control-mark::before {
+  content: "";
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
   background-color: #2d3440;
 }
