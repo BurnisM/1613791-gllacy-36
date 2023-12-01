@@ -136,21 +136,22 @@
         <section class="page-head">
           <ol class="breadcrumbs">
             <li class="breadcrumbs-item">
-              <a class="breadcrumbs-link" href="#">Главная</a>
+              <a class="breadcrumbs-link" href="index.html">Главная</a>
             </li>
             <li class="breadcrumbs-item">
               <a class="breadcrumbs-link" href="#">Каталог</a>
             </li>
             <li class="breadcrumbs-item breadcrumbs-active">
-              <a class="breadcrumbs-link" href="#">Сливочное мороженое</a>
+              <a class="breadcrumbs-link" href="catalog.html">Сливочное мороженое</a>
             </li>
           </ol>
           <h2 class="head-title">Сливочное мороженое</h2>
         </section>
-        <section class=" catalog-filter">
+        <section class="catalog-filter">
+          <h2 class="visually-hidden">Воспользуйтесь фильтром</h2>
           <form class="filter-form" action="https://echo.htmlacademy.ru" method="get">
-            <fieldset>
-              <legend>Сортировка:</legend>
+            <fieldset class="catalog-filter-group">
+              <legend class="catalog-filter-title">Сортировка:</legend>
               <div class="catalog-filter-group-wrapper">
                 <select class="select-control" name="sorting" aria-label="Сортировка">
                   <option value="popular">по популярности</option>
@@ -207,36 +208,36 @@
             <fieldset class="catalog-filter-group">
               <legend class="catalog-filter-title">Наполнители:</legend>
               <div class="catalog-filter-group-wrapper">
-                <label clacc="control">
+                <label class="control">
                   <input class="control-input-checkbox visually-hidden" type="checkbox" name="fillers" value="chocolate"
                     checked>
                   <span class="control-mark"></span>
                   <span class="control-label">шоколадные</span>
                 </label>
-                <label clacc="control">
+                <label class="control">
                   <input class="control-input-checkbox visually-hidden" type="checkbox" name="fillers"
                     value="sugar sprinkles" checked>
                   <span class="control-mark"></span>
                   <span class="control-label">сахарные посыпки</span>
                 </label>
-                <label clacc="control">
+                <label class="control">
                   <input class="control-input-checkbox visually-hidden" type="checkbox" name="fillers" value="fruits">
                   <span class="control-mark"></span>
                   <span class="control-label">фрукты</span>
                 </label>
-                <label clacc="control">
+                <label class="control">
                   <input class="control-input-checkbox visually-hidden" type="checkbox" name="fillers" value="syrups">
                   <span class="control-mark"></span>
                   <span class="control-label">сиропы</span>
                 </label>
-                <label clacc="control">
+                <label class="control">
                   <input class="control-input-checkbox visually-hidden" type="checkbox" name="fillers" value="jams">
                   <span class="control-mark"></span>
                   <span class="control-label">джемы</span>
                 </label>
               </div>
             </fieldset>
-            <button class="button button-secondary" type="button">Применить</button>
+            <button class="button button-secondary filter-form-button" type="button">Применить</button>
           </form>
         </section>
         <section class="goods section-main">
@@ -253,7 +254,8 @@
               </div>
             </li>
             <li class="goods-item">
-              <img class="goods-img" src="./images/content/goods/goods-fistashka.png" alt="мороженое Фисташка">
+              <img class="goods-img" src="./images/content/goods/goods-fistashka.png" width="168" height="168"
+                alt="мороженое Фисташка">
               <h3 class="goods-title">Фисташка</h3>
               <p class="goods-description">Фисташковый пломбир с кусочками шоколада</p>
               <div class="cards-price-wrapper">
@@ -273,11 +275,91 @@
             </li>
             <li class="goods-item">
               <img class="goods-img" src="./images/content/goods/goods-babl-gam.png" width="168" height="168"
-                alt="Мороженое  Бабл-гам">
+                alt="Мороженое Бабл-гам">
               <h3 class="goods-title">Бабл-гам</h3>
               <p class="goods-description">Ванильный пломбир со&nbsp;сладкой посыпкой</p>
               <div class="cards-price-wrapper">
                 <span class="cards-price">320 ₽/кг</span>
+                <button class="button button-cards"></button>
+              </div>
+            </li>
+            <li class="goods-item">
+              <img class="goods-img" src="./images/content/goods/goods-ejevika.png" width="168" height="168"
+                alt="Мороженое Ежевика">
+              <h3 class="goods-title">Ежевика</h3>
+              <p class="goods-description">Сливочное мороженое с&nbsp;ежевичным джемом</p>
+              <div class="cards-price-wrapper">
+                <span class="cards-price">330 ₽/кг</span>
+                <button class="button button-cards"></button>
+              </div>
+            </li>
+            <li class="goods-item">
+              <img class="goods-img" src="./images/content/goods/goods-banan.png" width="168" height="168"
+                alt="Мороженое Банан">
+              <h3 class="goods-title">Банан</h3>
+              <p class="goods-description">Сливочный пломбир с&nbsp;банановым вкусом</p>
+              <div class="cards-price-wrapper">
+                <span class="cards-price">340 ₽/кг</span>
+                <button class="button button-cards"></button>
+              </div>
+            </li>
+            <li class="goods-item">
+              <img class="goods-img" src="./images/content/goods/goods-shokolad.png" width="168" height="168"
+                alt="Мороженое Шоколадка">
+              <h3 class="goods-title">Шоколадка</h3>
+              <p class="goods-description">Классический шоколадный пломбир</p>
+              <div class="cards-price-wrapper">
+                <span class="cards-price">270 ₽/кг</span>
+                <button class="button button-cards"></button>
+              </div>
+            </li>
+            <li class="goods-item">
+              <img class="goods-img" src="./images/content/goods/goods-klubnichka.png" width="168" height="168"
+                alt="Мороженое Клубничка">
+              <h3 class="goods-title">Клубничка</h3>
+              <p class="goods-description">Сливочный пломбир с&nbsp;клубничным вкусом</p>
+              <div class="cards-price-wrapper">
+                <span class="cards-price">300 ₽/кг</span>
+                <button class="button button-cards"></button>
+              </div>
+            </li>
+            <li class="goods-item">
+              <img class="goods-img" src="./images/content/goods/goods-lemon.png" width="168" height="168"
+                alt="Мороженое Лимон">
+              <h3 class="goods-title">Лимон</h3>
+              <p class="goods-description">Освежающий лимонный сорбет</p>
+              <div class="cards-price-wrapper">
+                <span class="cards-price">310 ₽/кг</span>
+                <button class="button button-cards"></button>
+              </div>
+            </li>
+            <li class="goods-item">
+              <img class="goods-img" src="./images/content/goods/goods-mentol.png" width="168" height="168"
+                alt="Мороженое Ментол">
+              <h3 class="goods-title">Ментол</h3>
+              <p class="goods-description">Сливочный пломбир с&nbsp;ментоловым сиропом</p>
+              <div class="cards-price-wrapper">
+                <span class="cards-price">320 ₽/кг</span>
+                <button class="button button-cards"></button>
+              </div>
+            </li>
+            <li class="goods-item">
+              <img class="goods-img" src="./images/content/goods/goods-oreshek.png" width="168" height="168"
+                alt="Мороженое Орешек">
+              <h3 class="goods-title">Орешек</h3>
+              <p class="goods-description">Фисташковый пломбир с&nbsp;шоколадным сиропом</p>
+              <div class="cards-price-wrapper">
+                <span class="cards-price">360 ₽/кг</span>
+                <button class="button button-cards"></button>
+              </div>
+            </li>
+            <li class="goods-item">
+              <img class="goods-img" src="./images/content/goods/goods-cream-brule.png" width="168" height="168"
+                alt="Крем-брюле">
+              <h3 class="goods-title">Крем-брюле</h3>
+              <p class="goods-description">Классическое<br>крем-брюле</p>
+              <div class="cards-price-wrapper">
+                <span class="cards-price">280 ₽/кг</span>
                 <button class="button button-cards"></button>
               </div>
             </li>
