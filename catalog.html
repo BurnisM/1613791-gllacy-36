@@ -141,8 +141,8 @@
             <li class="breadcrumbs-item">
               <a class="breadcrumbs-link" href="#">Каталог</a>
             </li>
-            <li class="breadcrumbs-item breadcrumbs-active">
-              <a class="breadcrumbs-link" href="catalog.html">Сливочное мороженое</a>
+            <li class="breadcrumbs-item">
+              <a class="breadcrumbs-link breadcrumbs-link-active" href="catalog.html">Сливочное мороженое</a>
             </li>
           </ol>
           <h2 class="head-title">Сливочное мороженое</h2>
@@ -162,7 +162,7 @@
             </fieldset>
             <fieldset class="catalog-filter-group">
               <legend class="catalog-filter-title">Цена: 100 ₽ – 500 ₽</legend>
-              <div class="catalog-filter-group-wrapper">
+              <div class="catalog-filter-group-wrapper range-wrapper">
                 <div class="range">
                   <div class="range-scale">
                     <div class="range-bar" style="left: 24px; width: 56px;">
@@ -240,7 +240,7 @@
             <button class="button button-secondary filter-form-button" type="button">Применить</button>
           </form>
         </section>
-        <section class="goods section-main">
+        <section class="goods-catalog">
           <h2 class="visually-hidden">Попробуйте вкусы нашего мороженого</h2>
           <ul class="goods-list">
             <li class="goods-item">
@@ -364,6 +364,32 @@
               </div>
             </li>
           </ul>
+          <div class="pagination">
+            <button class="button button-secondary ">Показать еще</button>
+            <ul class="pagination-list">
+              <li class="pagination-item">
+                <a class="pagination-link pagination-link-prev" href="#" aria-label="предыдущая страница"></a>
+              </li>
+              <li class="pagination-item">
+                <a class="pagination-link pagination-link-current" href="#">1</a>
+              </li>
+              <li class="pagination-item">
+                <a class="pagination-link" href="#">2</a>
+              </li>
+              <li class="pagination-item">
+                <a class="pagination-link" href="#">3</a>
+              </li>
+              <li class="pagination-item">
+                <a class="pagination-link" href="#">4</a>
+              </li>
+              <li class="pagination-item">
+                <a class="pagination-link" href="#">5</a>
+              </li>
+              <li class="pagination-item">
+                <a class="pagination-link pagination-link-next" aria-label="сдудующая страница" href="#"></a>
+              </li>
+            </ul>
+          </div>
         </section>
       </main>
       <footer class="page-footer">
