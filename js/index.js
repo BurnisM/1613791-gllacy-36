@@ -30,3 +30,20 @@ controlRight.addEventListener('click', () => {
   sliderItems[currentIndex].classList.add('is-active');
   setPaginationState();
   });
+
+const modalBtn = document.querySelector('.button-feedback');
+const modalSection = document.querySelector('.modal-section');
+
+modalBtn.addEventListener('click', () => {
+  modalSection.classList.add('is-open')
+})
+
+const closeBtn = document.querySelector('.modal-close-button');
+closeBtn.addEventListener('click', () => {
+  modalSection.classList.remove('is-open')
+})
+document.addEventListener('keydown' , (evt)=>{
+  if(evt.key == 'Escape') {
+    modalSection.classList.remove('is-open')
+  }
+})

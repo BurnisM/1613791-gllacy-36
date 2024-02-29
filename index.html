@@ -7,7 +7,13 @@
     <meta name="description" content="купить мороженое магазин мороженого">
     <meta name="keywords" content="купить мороженое в Санкт-Петербурге, купить мороженое онлайн">
     <link rel="stylesheet" href="./styles/styles.css">
-    <link rel="icon" href="favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="./site.webmanifest">
+    <link rel="mask-icon" href="images/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
     <title>Gllacy Shop</title>
   </head>
 
@@ -412,10 +418,10 @@
           <span class="development-text">Сделано в .html academy © 2021</span>
         </div>
       </footer>
-      <div class="modal-section">
+      <section class="modal-section">
         <div class="modal-container">
-          <button class="modal-close-button"></button>
-          <section class="modal-content">
+          <button class="modal-close-button" type="button" aria-label="Закрыть"></button>
+          <div class="modal-content">
             <h2 class="modal-title">Мы обязательно ответим вам!</h2>
             <form class="modal-form" action="https://echo.htmlacademy.ru/" method="get">
               <input class="form-input" type="text" name="name" placeholder="Имя и фамилия" aria-label="Имя и фамилия"
@@ -424,15 +430,10 @@
                 aria-label="Адрес электронной почты" required>
               <textarea class="form-input" name="comment" placeholder="В свободной форме" rows="5"></textarea>
               <button class="button button-primary modal-form-button" type="submit">Отправить</button>
-
-
             </form>
-
-
-          </section>
+          </div>
         </div>
-
-      </div>
+      </section>
     </div>
     <script src="./js/index.js"></script>
   </body>
